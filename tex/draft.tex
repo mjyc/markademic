@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{ulem}
+
+\title{Markademic}
+\author{Mike Chung}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+Wouldn't it be great if you can write academic papers using markdown instead of latex?
+I present markademic, a pipeline for creating an academic paper-style pdf from a markdown file!
+
+
+\section{Approach}
+
+\begin{enumerate}
+[start=1]
+\item 
+Convert markdown to tex using \href{https://github.com/Paperist/remark-latex}{remark-latex}
+
+\item 
+Convert tex to pdf using \href{https://www.tug.org/applications/pdftex/}{pdflatex}
+
+\item 
+Update tex and pdf on-the-fly using \href{https://www.npmjs.com/package/npm-watch}{npm-watch}
+
+\end{enumerate}
+
+\section{Conclusion}
+
+
+Try writing your next paper with markademic!
+
+\end{document}

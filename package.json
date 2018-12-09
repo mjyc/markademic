@@ -17,8 +17,8 @@
   },
   "scripts": {
     "build": "npm run build:tex && npm run build:pdf",
-    "build:tex": "remark -r remarkrc.yml draft.md -o tex/paper.tex",
-    "build:pdf": "pdflatex --output-directory tex tex/paper.tex",
+    "build:tex": "remark -r remarkrc.yml draft.md -o tex/draft.tex",
+    "build:pdf": "pdflatex --output-directory tex tex/draft.tex",
     "watch": "npm-watch"
   }
 }
