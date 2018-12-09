@@ -1,0 +1,24 @@
+{
+  "name": "markademic",
+  "version": "0.0.0",
+  "description": "Markdown for academics",
+  "repository": "",
+  "author": "Michael Jae-Yoon Chung",
+  "license": "MIT",
+  "devDependencies": {
+    "@paperist/remark-latex": "2.0.0",
+    "npm-watch": "^0.5.0",
+    "remark": "10.0.1",
+    "remark-cli": "6.0.1",
+    "remark-parse": "4.0.0"
+  },
+  "watch": {
+    "build": "draft.md"
+  },
+  "scripts": {
+    "build": "npm run build:tex && npm run build:pdf",
+    "build:tex": "remark -r remarkrc.yml draft.md -o tex/output.tex",
+    "build:pdf": "pdflatex --output-directory tex tex/output.tex",
+    "watch": "npm-watch"
+  }
+}
