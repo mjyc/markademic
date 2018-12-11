@@ -1,6 +1,6 @@
 # Markademic
 
-A pipeline for writing an academic paper using markdown; it convert *.md to *.tex to *.pdf in npm pkg.
+A pipeline for writing an academic paper using markdown. It converts *.md to *.tex to *.pdf in npm pkg.
 
 ## Getting started
 
