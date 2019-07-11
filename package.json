@@ -2,7 +2,7 @@
   "name": "markademic",
   "version": "0.0.0",
   "description": "Markdown for academics",
-  "repository": "",
+  "repository": "https://github.com/mjyc/markademic",
   "author": "Michael Jae-Yoon Chung",
   "license": "MIT",
   "devDependencies": {
